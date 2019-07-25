@@ -46,3 +46,17 @@ class APIHandler: NSObject {
     
 }
 
+class Connectivity {
+    class var isConnectedToInternet:Bool {
+        return NetworkReachabilityManager()!.isReachable
+    }
+}
+
+struct URLConstants {
+    
+    private  static let baseURL = "http://www.recipepuppy.com/api/"
+    
+    static func getReceipeListing(with ingredients:String,pageNumber:Int) -> String {
+        return "\(URLConstants.baseURL)?i=\(ingredients)&p=\(pageNumber)"
+    }
+}

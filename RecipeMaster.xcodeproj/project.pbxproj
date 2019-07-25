@@ -20,6 +20,7 @@
 		C941273522E980430087942E /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C941273422E980430087942E /* APIHandler.swift */; };
 		C941273722E980820087942E /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = C941273622E980820087942E /* Dependencies.swift */; };
 		C941273B22E98F180087942E /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = C941273A22E98F180087942E /* placeholder.png */; };
+		C941273F22E9A4FD0087942E /* RecipeResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = C941273E22E9A4FD0087942E /* RecipeResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		C941273422E980430087942E /* APIHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIHandler.swift; sourceTree = "<group>"; };
 		C941273622E980820087942E /* Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
 		C941273A22E98F180087942E /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
+		C941273E22E9A4FD0087942E /* RecipeResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeResult.swift; sourceTree = "<group>"; };
 		C94A1C6598CD9236A931FB2C /* Pods-RecipeMaster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecipeMaster.release.xcconfig"; path = "Target Support Files/Pods-RecipeMaster/Pods-RecipeMaster.release.xcconfig"; sourceTree = "<group>"; };
 		E264B810966EEAAE8418F816 /* Pods-RecipeMasterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecipeMasterTests.debug.xcconfig"; path = "Target Support Files/Pods-RecipeMasterTests/Pods-RecipeMasterTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -121,6 +123,7 @@
 			children = (
 				C941270B22E97BA30087942E /* AppDelegate.swift */,
 				C941273122E9800B0087942E /* SearchRecipeVC.swift */,
+				C941273E22E9A4FD0087942E /* RecipeResult.swift */,
 				C941270F22E97BA40087942E /* Main.storyboard */,
 				C941271522E97BA60087942E /* Assets.xcassets */,
 				C941271722E97BA60087942E /* LaunchScreen.storyboard */,
@@ -325,6 +328,7 @@
 				C941270C22E97BA30087942E /* AppDelegate.swift in Sources */,
 				C941273222E9800B0087942E /* SearchRecipeVC.swift in Sources */,
 				C941273722E980820087942E /* Dependencies.swift in Sources */,
+				C941273F22E9A4FD0087942E /* RecipeResult.swift in Sources */,
 				C941273522E980430087942E /* APIHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

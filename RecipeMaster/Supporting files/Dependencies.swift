@@ -90,4 +90,31 @@ extension UIView {
         self.layer.cornerRadius = self.frame.height/2
         self.clipsToBounds = true
     }
+    
+    func showShadow(withRadius radius:CGFloat)  {
+        self.layer.shadowOpacity = 0.7
+        self.layer.shadowColor   = UIColor.gray.cgColor
+        self.layer.shadowOffset  = CGSize(width: 0, height: 1)
+        self.layer.shadowRadius  = radius
+        self.clipsToBounds       = false
+    }
+}
+
+
+extension CharacterSet {
+    static let urlAllowed = CharacterSet.urlFragmentAllowed
+        .union(.urlHostAllowed)
+        .union(.urlPasswordAllowed)
+        .union(.urlQueryAllowed)
+        .union(.urlUserAllowed)
+}
+
+struct CurrentIndexPath {
+
+    static func ofTableView(_ view: UIView, event: Any, indexpath tableView: UITableView) -> IndexPath {
+        let touches: Set<AnyHashable>? = (event as AnyObject).allTouches
+        let touch: UITouch? = touches?.first as? UITouch
+        let currentTouchPosition: CGPoint? = touch?.location(in: view)
+        return tableView.indexPathForRow(at: currentTouchPosition!)!
+    }
 }
