@@ -15,7 +15,7 @@ class APIHandler: NSObject {
     
     func requestGET(serviceUrl : String, params : [String : Any]?, success:@escaping (Any,Int?) -> Void, failure:@escaping (Error,String,[String : AnyObject],Int?) -> Void) {
         
-        Alamofire.request(serviceUrl, method: .get, parameters: params, headers: headers).validate().responseJSON { (response:DataResponse<Any>) in
+        Alamofire.request(serviceUrl, method: .get, parameters: params).validate().responseJSON { (response:DataResponse<Any>) in
             
             switch(response.result) {
             case .success(_):
