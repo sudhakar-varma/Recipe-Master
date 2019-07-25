@@ -1,0 +1,6 @@
+framework module Pods_RecipeMaster {
+  umbrella header "Pods-RecipeMaster-umbrella.h"
+
+  export *
+  module * { export * }
+}
