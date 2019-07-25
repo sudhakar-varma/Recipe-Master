@@ -19,6 +19,7 @@
 		C941273222E9800B0087942E /* SearchRecipeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C941273122E9800B0087942E /* SearchRecipeVC.swift */; };
 		C941273522E980430087942E /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C941273422E980430087942E /* APIHandler.swift */; };
 		C941273722E980820087942E /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = C941273622E980820087942E /* Dependencies.swift */; };
+		C941273B22E98F180087942E /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = C941273A22E98F180087942E /* placeholder.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		C941273122E9800B0087942E /* SearchRecipeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRecipeVC.swift; sourceTree = "<group>"; };
 		C941273422E980430087942E /* APIHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIHandler.swift; sourceTree = "<group>"; };
 		C941273622E980820087942E /* Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
+		C941273A22E98F180087942E /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
 		C94A1C6598CD9236A931FB2C /* Pods-RecipeMaster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecipeMaster.release.xcconfig"; path = "Target Support Files/Pods-RecipeMaster/Pods-RecipeMaster.release.xcconfig"; sourceTree = "<group>"; };
 		E264B810966EEAAE8418F816 /* Pods-RecipeMasterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecipeMasterTests.debug.xcconfig"; path = "Target Support Files/Pods-RecipeMasterTests/Pods-RecipeMasterTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -144,6 +146,7 @@
 			children = (
 				C941273422E980430087942E /* APIHandler.swift */,
 				C941273622E980820087942E /* Dependencies.swift */,
+				C941273A22E98F180087942E /* placeholder.png */,
 			);
 			path = "Supporting files";
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 				C941271922E97BA60087942E /* LaunchScreen.storyboard in Resources */,
 				C941271622E97BA60087942E /* Assets.xcassets in Resources */,
 				C941272F22E97C190087942E /* README.md in Resources */,
+				C941273B22E98F180087942E /* placeholder.png in Resources */,
 				C941271122E97BA40087942E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
