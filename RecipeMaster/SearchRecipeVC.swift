@@ -45,7 +45,8 @@ class SearchRecipeVC: UIViewController,UIScrollViewDelegate {
         
         listingTV.estimatedRowHeight = 247
         listingTV.rowHeight = UITableView.automaticDimension
-        //self.listingTV.setEmptyMessage("Search recipe")
+        self.listingTV.setEmptyMessage("Search recipe with comma seperated")
+        
         self.searchController = ({
             let controller = UISearchController(searchResultsController: nil)
             navigationItem.searchController = controller

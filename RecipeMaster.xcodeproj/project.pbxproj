@@ -123,13 +123,13 @@
 			children = (
 				C941270B22E97BA30087942E /* AppDelegate.swift */,
 				C941273122E9800B0087942E /* SearchRecipeVC.swift */,
-				C941273E22E9A4FD0087942E /* RecipeResult.swift */,
 				C941270F22E97BA40087942E /* Main.storyboard */,
 				C941271522E97BA60087942E /* Assets.xcassets */,
 				C941271722E97BA60087942E /* LaunchScreen.storyboard */,
 				C941271A22E97BA60087942E /* Info.plist */,
 				C941271222E97BA40087942E /* RecipeMaster.xcdatamodeld */,
 				C941272E22E97C190087942E /* README.md */,
+				C941273E22E9A4FD0087942E /* RecipeResult.swift */,
 				C941273322E9801E0087942E /* Supporting files */,
 			);
 			path = RecipeMaster;
