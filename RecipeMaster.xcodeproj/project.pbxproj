@@ -3,20 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		5AA99B8225F824D688F17707 /* Pods_RecipeMasterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A8C217576905D7840F5D263 /* Pods_RecipeMasterTests.framework */; };
 		8E23516D5A7BC9A0AE9C0E63 /* Pods_RecipeMaster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 241CBA6478390221590A15FD /* Pods_RecipeMaster.framework */; };
 		C941270C22E97BA30087942E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C941270B22E97BA30087942E /* AppDelegate.swift */; };
-		C941270E22E97BA30087942E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C941270D22E97BA30087942E /* ViewController.swift */; };
 		C941271122E97BA40087942E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C941270F22E97BA40087942E /* Main.storyboard */; };
 		C941271422E97BA40087942E /* RecipeMaster.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C941271222E97BA40087942E /* RecipeMaster.xcdatamodeld */; };
 		C941271622E97BA60087942E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C941271522E97BA60087942E /* Assets.xcassets */; };
 		C941271922E97BA60087942E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C941271722E97BA60087942E /* LaunchScreen.storyboard */; };
 		C941272422E97BA60087942E /* RecipeMasterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C941272322E97BA60087942E /* RecipeMasterTests.swift */; };
 		C941272F22E97C190087942E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C941272E22E97C190087942E /* README.md */; };
+		C941273222E9800B0087942E /* SearchRecipeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C941273122E9800B0087942E /* SearchRecipeVC.swift */; };
+		C941273522E980430087942E /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C941273422E980430087942E /* APIHandler.swift */; };
+		C941273722E980820087942E /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = C941273622E980820087942E /* Dependencies.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,6 @@
 		5A8C217576905D7840F5D263 /* Pods_RecipeMasterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RecipeMasterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C941270822E97BA30087942E /* RecipeMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecipeMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C941270B22E97BA30087942E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C941270D22E97BA30087942E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C941271022E97BA40087942E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C941271322E97BA40087942E /* RecipeMaster.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RecipeMaster.xcdatamodel; sourceTree = "<group>"; };
 		C941271522E97BA60087942E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -46,6 +47,9 @@
 		C941272322E97BA60087942E /* RecipeMasterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeMasterTests.swift; sourceTree = "<group>"; };
 		C941272522E97BA60087942E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C941272E22E97C190087942E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		C941273122E9800B0087942E /* SearchRecipeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRecipeVC.swift; sourceTree = "<group>"; };
+		C941273422E980430087942E /* APIHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIHandler.swift; sourceTree = "<group>"; };
+		C941273622E980820087942E /* Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
 		C94A1C6598CD9236A931FB2C /* Pods-RecipeMaster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecipeMaster.release.xcconfig"; path = "Target Support Files/Pods-RecipeMaster/Pods-RecipeMaster.release.xcconfig"; sourceTree = "<group>"; };
 		E264B810966EEAAE8418F816 /* Pods-RecipeMasterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecipeMasterTests.debug.xcconfig"; path = "Target Support Files/Pods-RecipeMasterTests/Pods-RecipeMasterTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,7 +82,6 @@
 				E264B810966EEAAE8418F816 /* Pods-RecipeMasterTests.debug.xcconfig */,
 				3460B2DB3630AF65030E2AD5 /* Pods-RecipeMasterTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -115,13 +118,14 @@
 			isa = PBXGroup;
 			children = (
 				C941270B22E97BA30087942E /* AppDelegate.swift */,
-				C941270D22E97BA30087942E /* ViewController.swift */,
+				C941273122E9800B0087942E /* SearchRecipeVC.swift */,
 				C941270F22E97BA40087942E /* Main.storyboard */,
 				C941271522E97BA60087942E /* Assets.xcassets */,
 				C941271722E97BA60087942E /* LaunchScreen.storyboard */,
 				C941271A22E97BA60087942E /* Info.plist */,
 				C941271222E97BA40087942E /* RecipeMaster.xcdatamodeld */,
 				C941272E22E97C190087942E /* README.md */,
+				C941273322E9801E0087942E /* Supporting files */,
 			);
 			path = RecipeMaster;
 			sourceTree = "<group>";
@@ -133,6 +137,15 @@
 				C941272522E97BA60087942E /* Info.plist */,
 			);
 			path = RecipeMasterTests;
+			sourceTree = "<group>";
+		};
+		C941273322E9801E0087942E /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				C941273422E980430087942E /* APIHandler.swift */,
+				C941273622E980820087942E /* Dependencies.swift */,
+			);
+			path = "Supporting files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,8 +318,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C941271422E97BA40087942E /* RecipeMaster.xcdatamodeld in Sources */,
-				C941270E22E97BA30087942E /* ViewController.swift in Sources */,
 				C941270C22E97BA30087942E /* AppDelegate.swift in Sources */,
+				C941273222E9800B0087942E /* SearchRecipeVC.swift in Sources */,
+				C941273722E980820087942E /* Dependencies.swift in Sources */,
+				C941273522E980430087942E /* APIHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
