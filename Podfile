@@ -8,7 +8,6 @@ target 'RecipeMaster' do
   # Pods for RecipeMaster
 
 pod 'Alamofire', '~> 4.7'
-pod 'AlamofireImage', '~> 3.5'
 
   target 'RecipeMasterTests' do
     inherit! :search_paths
