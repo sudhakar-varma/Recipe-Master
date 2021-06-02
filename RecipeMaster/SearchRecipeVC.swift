@@ -58,7 +58,6 @@ class SearchRecipeVC: UIViewController,UIScrollViewDelegate {
         })()
         initFooterView()
         
-        print("Welcome 2.0")
     }
     
     func initFooterView() {
