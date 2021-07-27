@@ -40,9 +40,7 @@ class SearchRecipeVC: UIViewController,UIScrollViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        print("Hello This is 2.0 branch")
-        
+                
         listingTV.tableFooterView = UIView()
         
         listingTV.estimatedRowHeight = 247
