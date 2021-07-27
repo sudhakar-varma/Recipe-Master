@@ -6,4 +6,14 @@
 //  Copyright © 2021 sudhakar. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class DetailVC: UIViewController {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        
+    }
+    
+}
