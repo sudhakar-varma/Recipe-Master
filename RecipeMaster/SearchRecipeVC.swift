@@ -41,7 +41,7 @@ class SearchRecipeVC: UIViewController,UIScrollViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print("Hello branch is merging to master")
+        print("Hello This is master")
         
         listingTV.tableFooterView = UIView()
         
