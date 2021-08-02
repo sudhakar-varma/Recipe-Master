@@ -41,7 +41,7 @@ class SearchRecipeVC: UIViewController,UIScrollViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
                 
-        print("This is branch")
+        print("This is master")
         
         listingTV.tableFooterView = UIView()
         
