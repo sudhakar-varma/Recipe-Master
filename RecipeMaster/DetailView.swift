@@ -13,7 +13,7 @@ class DetailVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print("This is master")
+        print("This is master ")
     }
     
 }
