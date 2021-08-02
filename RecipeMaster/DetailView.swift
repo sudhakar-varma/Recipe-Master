@@ -13,7 +13,7 @@ class DetailVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print("hello")
+        print("This is branch")
     }
     
 }
