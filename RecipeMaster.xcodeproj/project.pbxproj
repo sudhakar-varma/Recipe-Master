@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5AA99B8225F824D688F17707 /* Pods_RecipeMasterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A8C217576905D7840F5D263 /* Pods_RecipeMasterTests.framework */; };
-		728357552667DA1600449C0C /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728357542667DA1600449C0C /* DetailView.swift */; };
+		720A8FBA26FF8313009EC93C /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720A8FB926FF8313009EC93C /* MainVC.swift */; };
 		72F33B3D26B7EBD900131246 /* SearchRecipeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F33B3C26B7EBD900131246 /* SearchRecipeVC.swift */; };
 		8E23516D5A7BC9A0AE9C0E63 /* Pods_RecipeMaster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 241CBA6478390221590A15FD /* Pods_RecipeMaster.framework */; };
 		C941270C22E97BA30087942E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C941270B22E97BA30087942E /* AppDelegate.swift */; };
@@ -39,7 +39,7 @@
 		3460B2DB3630AF65030E2AD5 /* Pods-RecipeMasterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecipeMasterTests.release.xcconfig"; path = "Target Support Files/Pods-RecipeMasterTests/Pods-RecipeMasterTests.release.xcconfig"; sourceTree = "<group>"; };
 		53DE2D8E6825662672772638 /* Pods-RecipeMaster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecipeMaster.debug.xcconfig"; path = "Target Support Files/Pods-RecipeMaster/Pods-RecipeMaster.debug.xcconfig"; sourceTree = "<group>"; };
 		5A8C217576905D7840F5D263 /* Pods_RecipeMasterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RecipeMasterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		728357542667DA1600449C0C /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		720A8FB926FF8313009EC93C /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		72F33B3C26B7EBD900131246 /* SearchRecipeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchRecipeVC.swift; sourceTree = "<group>"; };
 		C941270822E97BA30087942E /* RecipeMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecipeMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C941270B22E97BA30087942E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -124,8 +124,8 @@
 			isa = PBXGroup;
 			children = (
 				C941270B22E97BA30087942E /* AppDelegate.swift */,
-				728357542667DA1600449C0C /* DetailView.swift */,
 				72F33B3C26B7EBD900131246 /* SearchRecipeVC.swift */,
+				720A8FB926FF8313009EC93C /* MainVC.swift */,
 				C941270F22E97BA40087942E /* Main.storyboard */,
 				C941271522E97BA60087942E /* Assets.xcassets */,
 				C941271722E97BA60087942E /* LaunchScreen.storyboard */,
@@ -329,11 +329,11 @@
 			files = (
 				C941271422E97BA40087942E /* RecipeMaster.xcdatamodeld in Sources */,
 				C941270C22E97BA30087942E /* AppDelegate.swift in Sources */,
-				728357552667DA1600449C0C /* DetailView.swift in Sources */,
 				C941273722E980820087942E /* Dependencies.swift in Sources */,
 				C941273F22E9A4FD0087942E /* RecipeResult.swift in Sources */,
 				72F33B3D26B7EBD900131246 /* SearchRecipeVC.swift in Sources */,
 				C941273522E980430087942E /* APIHandler.swift in Sources */,
+				720A8FBA26FF8313009EC93C /* MainVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
