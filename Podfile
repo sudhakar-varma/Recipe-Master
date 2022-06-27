@@ -7,7 +7,7 @@ target 'RecipeMaster' do
 
   # Pods for RecipeMaster
 
-pod 'Alamofire', '~> 5.4'
+pod 'Alamofire'
 pod 'AlamofireImage', '~> 4.1'
 
 
