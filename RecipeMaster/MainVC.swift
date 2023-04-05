@@ -12,7 +12,8 @@ class MainVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        print("This is main branch and main class")
     }
 
 }
