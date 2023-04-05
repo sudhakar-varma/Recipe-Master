@@ -35,5 +35,10 @@ class MainVC: UIViewController {
         let hell1 = "hello "
         print(hell1)
     }
+    
+    func hello() {
+        
+        
+    }
 
 }
