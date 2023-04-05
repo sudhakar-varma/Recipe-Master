@@ -29,7 +29,7 @@ class RecipeCell: UITableViewCell {
 class SearchRecipeVC: UIViewController,UIScrollViewDelegate {
     
     lazy private var searchController = UISearchController()
-    lazy private var receipeArray = [RecipeResult]()
+    lazy private var recipeArray = [RecipeResult]()
     
     private var searchBarText = ""
     private var reqPageNo:Int = 1
@@ -92,7 +92,7 @@ class SearchRecipeVC: UIViewController,UIScrollViewDelegate {
                 reqPageNo = reqPageNo + 1
                 (footerView.viewWithTag(100) as? UIActivityIndicatorView)?.startAnimating()
             }
-            let url = URLConstants.getReceipeListing(with: searchText, pageNumber: reqPageNo).addingPercentEncoding(withAllowedCharacters: .urlAllowed)!
+            let url = URLConstants.getRecipeListing(with: searchText, pageNumber: reqPageNo).addingPercentEncoding(withAllowedCharacters: .urlAllowed)!
             
             APIHandler.sharedInstance.requestGET(serviceUrl: url, params: nil, success: { (successJson,httpCode) in
                 
@@ -106,11 +106,11 @@ class SearchRecipeVC: UIViewController,UIScrollViewDelegate {
                             
                             if jsonArray.count == 0 {
                                 self.listingTV.setEmptyMessage("No result")
-                                self.receipeArray.removeAll()
+                                self.recipeArray.removeAll()
                                 self.listingTV.reloadData()
                                 self.hasMoreData = false
                             }else{
-                                self.receipeArray.removeAll()
+                                self.recipeArray.removeAll()
                                 self.decodeArray(jsonArray)
                                 self.hasMoreData = true
                             }
@@ -128,7 +128,7 @@ class SearchRecipeVC: UIViewController,UIScrollViewDelegate {
                         }
                     }
                 }
-            }) { (error,errorString,errorJson,httpCode) in
+            }) { (error, errorString, errorJson, httpCode) in
                 self.stopActivityIndicator()
                 (self.footerView.viewWithTag(100) as? UIActivityIndicatorView)?.stopAnimating()
             }
@@ -142,7 +142,7 @@ class SearchRecipeVC: UIViewController,UIScrollViewDelegate {
             do {
                 let seatResultData = try JSONSerialization.data(withJSONObject: d, options: .prettyPrinted)
                 let seatResult = try decoder.decode(RecipeResult.self, from: seatResultData)
-                self.receipeArray.append(seatResult)
+                self.recipeArray.append(seatResult)
                 self.listingTV.reloadData()
             } catch {
                 print("decode error")
@@ -153,9 +153,9 @@ class SearchRecipeVC: UIViewController,UIScrollViewDelegate {
     //MARK: - Actions
     @objc func shareButtonAction(sender:UIButton,event:Any) {
       
-        let indexxx = CurrentIndexPath.ofTableView(self.listingTV, event: event, indexpath: self.listingTV)
+        let index = CurrentIndexPath.ofTableView(self.listingTV, event: event, indexpath: self.listingTV)
         
-        let controller = UIActivityViewController(activityItems: ["", URL(string:receipeArray[indexxx.row].href ?? "") ?? ""], applicationActivities: nil)
+        let controller = UIActivityViewController(activityItems: ["", URL(string:recipeArray[index.row].href ?? "") ?? ""], applicationActivities: nil)
         self.present(controller, animated: true, completion: nil)
     }
     
@@ -172,7 +172,7 @@ extension SearchRecipeVC : UISearchBarDelegate {
 extension SearchRecipeVC:UITableViewDelegate,UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return receipeArray.count
+        return recipeArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -180,14 +180,14 @@ extension SearchRecipeVC:UITableViewDelegate,UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "recipeCell") as! RecipeCell
         cell.selectionStyle = .none
         
-        cell.titleLabel.text = receipeArray[indexPath.row].title?.filter { !$0.isNewline }
-        cell.ingredientsLabel.text = receipeArray[indexPath.row].ingredients
+        cell.titleLabel.text = recipeArray[indexPath.row].title?.filter { !$0.isNewline }
+        cell.ingredientsLabel.text = recipeArray[indexPath.row].ingredients
         
-        let imageUrl = "\(receipeArray[indexPath.row].thumbnail ?? "")"
+        let imageUrl = "\(recipeArray[indexPath.row].thumbnail ?? "")"
         if imageUrl != "" {
-            cell.recipeImage.af_setImage(withURL: URL(string: imageUrl)!,placeholderImage:  UIImage(named: "placeholder.png")!)
+            cell.recipeImage.af.setImage(withURL: URL(string: imageUrl)!,placeholderImage:  UIImage(named: "placeholder.png")!)
         }
-        if indexPath.row == receipeArray.count - 1{
+        if indexPath.row == recipeArray.count - 1{
          
             if hasMoreData {
                 self.getRecipeList(loadFirstTime: false, searchText: searchBarText)
@@ -199,7 +199,7 @@ extension SearchRecipeVC:UITableViewDelegate,UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.openSFSafariVC(WithURL: "\(receipeArray[indexPath.row].href!)")
+        self.openSFSafariVC(WithURL: "\(recipeArray[indexPath.row].href!)")
     }
     
 }
