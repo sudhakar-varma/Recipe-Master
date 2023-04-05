@@ -18,6 +18,16 @@ class MainVC: UIViewController {
         let hello = "hello"
         print(hello)
         
+        
+        
+        
+        
+        
+        
+        let hello2  = "hello sjh djhask d"
+        print(hello2)
+        
+        
         let hell1 = "hello kjhkd j"
         print(hell1)
     }
