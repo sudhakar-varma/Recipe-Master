@@ -14,26 +14,7 @@ class MainVC: UIViewController {
         super.viewDidLoad()
         
         print("This is main branch and main class")
-    
-        let hello = "hello"
-        print(hello)
         
-        
-        
-        
-        
-        
-        
-        let hello2  = "hello sjh"
-        print(hello2)
-        
-        
-        let hell1 = "hello kjhkd j"
-        print(hell1)
-        
-        
-        let hell1 = "hello "
-        print(hell1)
     }
     
     func hello() {
