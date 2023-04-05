@@ -24,7 +24,7 @@ class MainVC: UIViewController {
         
         
         
-        let hello2  = "hello sjh djhask d"
+        let hello2  = "hello sjh"
         print(hello2)
         
         
@@ -32,7 +32,7 @@ class MainVC: UIViewController {
         print(hell1)
         
         
-        let hell1 = "hello kjhkd j"
+        let hell1 = "hello "
         print(hell1)
     }
 
