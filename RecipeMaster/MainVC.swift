@@ -14,6 +14,9 @@ class MainVC: UIViewController {
         super.viewDidLoad()
         
         print("This is main branch and main class")
+    
+        let hello = "hello"
+        print(hello)
     }
 
 }
