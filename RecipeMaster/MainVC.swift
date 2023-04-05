@@ -30,6 +30,10 @@ class MainVC: UIViewController {
         
         let hell1 = "hello kjhkd j"
         print(hell1)
+        
+        
+        let hell1 = "hello kjhkd j"
+        print(hell1)
     }
 
 }
