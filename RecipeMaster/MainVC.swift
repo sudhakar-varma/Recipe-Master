@@ -17,6 +17,9 @@ class MainVC: UIViewController {
     
         let hello = "hello"
         print(hello)
+        
+        let hell1 = "hello kjhkd j"
+        print(hell1)
     }
 
 }
